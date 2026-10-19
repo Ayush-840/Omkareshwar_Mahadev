@@ -18,7 +18,7 @@ import { Member } from '../src/types';
 import { ScreenHeader } from '../src/components/common/ScreenHeader';
 import { Card } from '../src/components/common/Card';
 import { PrimaryButton } from '../src/components/common/PrimaryButton';
-import { colors, spacing, fontSize, fontWeight, radius, shadow } from '../src/theme';
+import { colors, spacing, fontSize, fontWeight, radius } from '../src/theme';
 import { getCurrentLanguage } from '../src/i18n';
 
 export default function DevoteeCommunityScreen() {

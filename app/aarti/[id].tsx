@@ -21,7 +21,7 @@ import {
   scheduleAartiReminder,
   cancelScheduledNotification,
 } from '../../src/services/notifications';
-import { colors, spacing, fontSize, fontWeight, radius, shadow } from '../../src/theme';
+import { colors, spacing, fontSize, fontWeight, shadow } from '../../src/theme';
 import { getCurrentLanguage } from '../../src/i18n';
 
 export default function AartiDetailScreen() {

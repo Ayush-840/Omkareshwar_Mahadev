@@ -4,7 +4,7 @@ import { useRouter } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import { Aarti } from '../../types';
 import { getNextAarti, NextAartiResult } from '../../utils/date';
-import { colors, spacing, fontSize, fontWeight, radius } from '../../theme';
+import { colors, spacing, fontSize, fontWeight } from '../../theme';
 import { getCurrentLanguage } from '../../i18n';
 
 interface NextAartiBannerProps {

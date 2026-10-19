@@ -72,7 +72,7 @@ export default function VideosScreen() {
           <View style={styles.videoMeta}>
             <View style={styles.categoryBadge}>
               <Text style={styles.categoryText}>
-                {t(`videos.categories.${item.category}` as any)}
+                {t(`videos.categories.${item.category}`)}
               </Text>
             </View>
             <Text style={styles.videoTitle} numberOfLines={2}>

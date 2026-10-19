@@ -61,10 +61,10 @@ export default function HomeScreen() {
       {/* 1. Hero Artwork matching user reference image */}
       <HeroBanner />
 
-      {/* 2. Seamless 3 x 3 Devotional Tile Grid */}
+      {/* 2. Seamless 3 x 3 Devotional Tile Grid (overlaps hero, per reference) */}
       <TileGrid />
 
-      {/* 3. Live Aarti Countdown and Pinned Announcements */}
+      {/* 3. Live aarti countdown + pinned notice below the grid */}
       <View style={styles.extrasContainer}>
         <NextAartiBanner aartis={aartis} />
         {pinnedNotice && <PinnedNoticeBanner notice={pinnedNotice} />}

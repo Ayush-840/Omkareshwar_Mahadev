@@ -1,11 +1,9 @@
 import React from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
-import { useTranslation } from 'react-i18next';
 import { colors, radius, spacing, fontSize, fontWeight } from '../../theme';
 import { changeLanguage, getCurrentLanguage } from '../../i18n';
 
 export const LanguageToggle: React.FC = () => {
-  const { i18n } = useTranslation();
   const currentLang = getCurrentLanguage();
 
   const handleToggle = async () => {

@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
-import { colors, spacing, fontSize, fontWeight } from '../../theme';
+import { colors, spacing, fontSize } from '../../theme';
 import { PrimaryButton } from './PrimaryButton';
 
 interface EmptyStateProps {

@@ -12,6 +12,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import { colors, spacing, fontSize, fontWeight, radius } from '../../theme';
 import { LanguageToggle } from './LanguageToggle';
+import templeHeroImage from '../../../assets/images/temple_hero.png';
 
 const { width: windowWidth } = Dimensions.get('window');
 // Aspect ratio of the hero image (367 / 492) -> height is around windowWidth * (492 / 367)
@@ -47,7 +48,7 @@ export const HeroBanner: React.FC = () => {
     <View style={styles.container}>
       {/* Authentic Devotional Hero Artwork */}
       <Image
-        source={require('../../../assets/images/temple_hero.png')}
+        source={templeHeroImage}
         style={styles.heroImage}
         resizeMode="cover"
       />

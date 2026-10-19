@@ -1,19 +1,20 @@
 import React from 'react';
-import { View, StyleSheet, Dimensions } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { TileItem, TileConfig } from './TileItem';
-import { colors, spacing } from '../../theme';
+import { spacing } from '../../theme';
 
+// Colors and layout mirror the reference home screen:
+// orange, amber, purple / blue, green, red / violet, gold, navy
 export const TILES: TileConfig[] = [
   {
     id: 'info',
     labelKey: 'tiles.info',
     labelFallbackHi: 'मंदिर जानकारी',
     labelFallbackEn: 'Temple Info',
-    icon: 'business',
-    color: '#F25C24',
-    image: require('../../../assets/tiles/tile_info.png'),
+    icon: 'om',
+    color: '#F26A21',
     route: '/info',
   },
   {
@@ -21,9 +22,8 @@ export const TILES: TileConfig[] = [
     labelKey: 'tiles.aarti',
     labelFallbackHi: 'आरती दर्शन',
     labelFallbackEn: 'Aarti Darshan',
-    icon: 'flame',
-    color: '#FFA000',
-    image: require('../../../assets/tiles/tile_aarti.png'),
+    icon: 'fire',
+    color: '#E8962B',
     route: '/aarti',
   },
   {
@@ -33,7 +33,6 @@ export const TILES: TileConfig[] = [
     labelFallbackEn: 'Events',
     icon: 'calendar',
     color: '#8E24AA',
-    image: require('../../../assets/tiles/tile_events.png'),
     route: '/events',
   },
   {
@@ -41,9 +40,8 @@ export const TILES: TileConfig[] = [
     labelKey: 'tiles.gallery',
     labelFallbackHi: 'फोटो गैलरी',
     labelFallbackEn: 'Photo Gallery',
-    icon: 'images',
+    icon: 'image-multiple',
     color: '#1E88E5',
-    image: require('../../../assets/tiles/tile_gallery.png'),
     route: '/gallery',
   },
   {
@@ -51,9 +49,8 @@ export const TILES: TileConfig[] = [
     labelKey: 'tiles.community',
     labelFallbackHi: 'भक्त समुदाय',
     labelFallbackEn: 'Devotee Community',
-    icon: 'people',
+    icon: 'account-group',
     color: '#2E7D32',
-    image: require('../../../assets/tiles/tile_community.png'),
     route: '/community',
   },
   {
@@ -61,9 +58,8 @@ export const TILES: TileConfig[] = [
     labelKey: 'tiles.donate',
     labelFallbackHi: 'दान सहयोग',
     labelFallbackEn: 'Donation Support',
-    icon: 'heart',
+    icon: 'hand-heart',
     color: '#E53935',
-    image: require('../../../assets/tiles/tile_donate.png'),
     route: '/donate',
   },
   {
@@ -73,7 +69,6 @@ export const TILES: TileConfig[] = [
     labelFallbackEn: 'Notices / News',
     icon: 'newspaper',
     color: '#9C27B0',
-    image: require('../../../assets/tiles/tile_notices.png'),
     route: '/notices',
   },
   {
@@ -81,9 +76,8 @@ export const TILES: TileConfig[] = [
     labelKey: 'tiles.videos',
     labelFallbackHi: 'वीडियो',
     labelFallbackEn: 'Videos',
-    icon: 'videocam',
+    icon: 'play',
     color: '#FB8C00',
-    image: require('../../../assets/tiles/tile_videos.png'),
     route: '/videos',
   },
   {
@@ -91,14 +85,11 @@ export const TILES: TileConfig[] = [
     labelKey: 'tiles.contact',
     labelFallbackHi: 'संपर्क करें',
     labelFallbackEn: 'Contact Us',
-    icon: 'call',
+    icon: 'phone',
     color: '#1565C0',
-    image: require('../../../assets/tiles/tile_contact.png'),
     route: '/contact',
   },
 ];
-
-const { width: windowWidth } = Dimensions.get('window');
 
 export const TileGrid: React.FC = () => {
   const router = useRouter();
@@ -114,7 +105,7 @@ export const TileGrid: React.FC = () => {
               key={tile.id}
               tile={tile}
               label={label}
-              onPress={() => router.push(tile.route as any)}
+              onPress={() => router.push(tile.route)}
             />
           );
         })}
@@ -125,13 +116,13 @@ export const TileGrid: React.FC = () => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#FFF9EE', // warm cream background exactly as in reference
+    backgroundColor: '#FFF9EE',
     borderTopLeftRadius: 36,
     borderTopRightRadius: 36,
     paddingTop: spacing.lg,
     paddingHorizontal: spacing.sm,
     paddingBottom: spacing.xl + 20,
-    marginTop: -28, // seamless overlap with the hero artwork
+    marginTop: -28,
     width: '100%',
   },
   grid: {

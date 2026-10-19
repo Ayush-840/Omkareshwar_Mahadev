@@ -6,6 +6,15 @@ All notable changes are documented here. Format follows Keep a Changelog; versio
 
 ### Added
 - Project documentation set (PRD, TRD, design, UI spec, data model, security, roadmap, testing, release guide).
+- ESLint flat config (eslint.config.js) for ESLint 9.
+
+### Changed
+- Home tile grid rebuilt as clean vector-icon squircles (MaterialCommunityIcons) matching the reference design: glossy 3D tile style, exact reference colours (orange, amber, purple, blue, green, red, violet, gold, navy), and i18n-safe labels (no baked-in text in images).
+- Temple Info tile uses the Om glyph for a clearly devotional identity.
+
+### Fixed
+- Lint errors across screens and components (unused imports, missing useEffect dependency, require() import).
+- TypeScript errors (PNG asset module declaration, expo-router `Href` typing on tile routes).
 
 ## [1.0.0] - 2026-10-19
 

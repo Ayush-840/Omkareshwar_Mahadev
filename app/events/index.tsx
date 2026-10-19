@@ -19,7 +19,7 @@ import { Card } from '../../src/components/common/Card';
 import { EmptyState } from '../../src/components/common/EmptyState';
 import { ErrorState } from '../../src/components/common/ErrorState';
 import { formatISODate } from '../../src/utils/date';
-import { colors, spacing, fontSize, fontWeight, radius, shadow } from '../../src/theme';
+import { colors, spacing, fontSize, fontWeight, radius } from '../../src/theme';
 import { getCurrentLanguage } from '../../src/i18n';
 
 export default function EventsListScreen() {

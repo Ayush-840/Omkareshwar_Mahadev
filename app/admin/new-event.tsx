@@ -25,9 +25,9 @@ export default function NewEventScreen() {
   const [titleHi, setTitleHi] = useState('');
   const [titleEn, setTitleEn] = useState('');
   const [descHi, setDescHi] = useState('');
-  const [descEn, setDescEn] = useState('');
+  const [descEn] = useState('');
   const [venueHi, setVenueHi] = useState('');
-  const [venueEn, setVenueEn] = useState('');
+  const [venueEn] = useState('');
   const [dateStr, setDateStr] = useState('2027-03-08');
   const [pinned, setPinned] = useState(false);
   const [loading, setLoading] = useState(false);

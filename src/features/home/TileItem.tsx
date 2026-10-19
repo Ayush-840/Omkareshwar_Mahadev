@@ -5,22 +5,20 @@ import {
   TouchableOpacity,
   Animated,
   View,
-  Image,
   Dimensions,
-  ImageSourcePropType,
 } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
-import { colors, spacing, radius, fontSize, fontWeight, shadow } from '../../theme';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+import type { Href } from 'expo-router';
+import { colors, spacing, fontSize, fontWeight, shadow } from '../../theme';
 
 export interface TileConfig {
   id: string;
   labelKey: string;
   labelFallbackHi: string;
   labelFallbackEn: string;
-  icon: keyof typeof Ionicons.glyphMap;
+  icon: keyof typeof MaterialCommunityIcons.glyphMap;
   color: string;
-  image?: ImageSourcePropType;
-  route: string;
+  route: Href;
 }
 
 interface TileItemProps {
@@ -62,18 +60,10 @@ export const TileItem: React.FC<TileItemProps> = ({ tile, label, onPress }) => {
         accessibilityRole="button"
         accessibilityLabel={`${label} खोलने के लिए टैप करें`}
       >
-        <View style={styles.iconContainer}>
-          {tile.image ? (
-            <Image
-              source={tile.image}
-              style={styles.tileImage}
-              resizeMode="cover"
-            />
-          ) : (
-            <View style={[styles.iconSquare, { backgroundColor: tile.color }]}>
-              <Ionicons name={tile.icon} size={32} color={colors.white} />
-            </View>
-          )}
+        <View style={[styles.iconSquare, { backgroundColor: tile.color }]}>
+          {/* Glossy top highlight for the 3D squircle look */}
+          <View style={styles.iconHighlight} pointerEvents="none" />
+          <MaterialCommunityIcons name={tile.icon} size={34} color={colors.white} />
         </View>
 
         <Text style={styles.label} numberOfLines={2}>
@@ -88,33 +78,36 @@ const styles = StyleSheet.create({
   tileWrapper: {
     width: TILE_WIDTH,
     alignItems: 'center',
-    marginBottom: spacing.base + 2,
+    marginBottom: spacing.base + 4,
   },
   touchable: {
     alignItems: 'center',
     width: '100%',
     paddingVertical: spacing.xs,
   },
-  iconContainer: {
-    width: 68,
-    height: 68,
-    borderRadius: 20,
-    overflow: 'hidden',
-    marginBottom: spacing.xs + 4,
-    ...shadow.card,
-    elevation: 4,
-  },
-  tileImage: {
-    width: '100%',
-    height: '100%',
-    borderRadius: 20,
-  },
   iconSquare: {
-    width: '100%',
-    height: '100%',
+    width: 70,
+    height: 70,
     borderRadius: 20,
     justifyContent: 'center',
     alignItems: 'center',
+    overflow: 'hidden',
+    marginBottom: spacing.sm + 2,
+    ...shadow.card,
+    shadowOpacity: 0.22,
+    shadowRadius: 5,
+    shadowOffset: { width: 0, height: 3 },
+    elevation: 5,
+  },
+  iconHighlight: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    height: '46%',
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
   },
   label: {
     fontSize: fontSize.tileLabel,

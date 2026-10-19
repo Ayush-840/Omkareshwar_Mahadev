@@ -4,11 +4,9 @@ import {
   Text,
   StyleSheet,
   TextInput,
-  TouchableOpacity,
   KeyboardAvoidingView,
   Platform,
   ScrollView,
-  Alert,
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
@@ -38,7 +36,7 @@ export default function AdminLoginScreen() {
       }
     }
     checkAuth();
-  }, []);
+  }, [router]);
 
   const handleLogin = async () => {
     if (!email.trim() || !password) {

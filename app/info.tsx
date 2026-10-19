@@ -23,11 +23,10 @@ export default function TempleInfoScreen() {
   const { t } = useTranslation();
   const lang = getCurrentLanguage();
 
-  const { data: info, isLoading, error, refetch } = useQuery({
+  const { data: info, isLoading, error } = useQuery({
     queryKey: ['templeInfo'],
     queryFn: fetchTempleInfo,
   });
-
   const handleOpenMap = () => {
     if (!info?.location) return;
     const url = `https://www.google.com/maps/search/?api=1&query=${info.location.lat},${info.location.lng}`;
