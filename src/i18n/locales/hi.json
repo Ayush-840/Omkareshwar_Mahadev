@@ -1,0 +1,143 @@
+{
+  "tiles": {
+    "info": "मंदिर जानकारी",
+    "aarti": "आरती दर्शन",
+    "events": "कार्यक्रम",
+    "gallery": "फोटो गैलरी",
+    "community": "भक्त समुदाय",
+    "donate": "दान सहयोग",
+    "notices": "नोटिस / समाचार",
+    "videos": "वीडियो",
+    "contact": "संपर्क करें"
+  },
+  "common": {
+    "offline": "इंटरनेट नहीं है",
+    "retry": "दोबारा कोशिश करें",
+    "loading": "लोड हो रहा है...",
+    "noData": "कोई डेटा नहीं",
+    "error": "कुछ गड़बड़ हुई",
+    "share": "शेयर करें",
+    "close": "बंद करें",
+    "back": "वापस",
+    "save": "सहेजें",
+    "cancel": "रद्द करें",
+    "settings": "सेटिंग्स",
+    "lastUpdated": "अंतिम अपडेट",
+    "callToAction": "अधिक जानें"
+  },
+  "home": {
+    "nextAarti": "अगली आरती",
+    "in": "में",
+    "pinnedNotice": "महत्वपूर्ण सूचना"
+  },
+  "aarti": {
+    "title": "आरती दर्शन",
+    "remindMe": "10 मिनट पहले याद दिलाएं",
+    "download": "ऑफलाइन के लिए डाउनलोड करें",
+    "lyrics": "आरती के बोल",
+    "play": "चलाएं",
+    "pause": "रोकें",
+    "nextAarti": "अगली आरती",
+    "schedule": "आरती अनुसूची"
+  },
+  "events": {
+    "title": "कार्यक्रम",
+    "addToCalendar": "कैलेंडर में जोड़ें",
+    "remindMe": "याद दिलाएं",
+    "noEvents": "अभी कोई कार्यक्रम नहीं है",
+    "listView": "सूची",
+    "calendarView": "कैलेंडर"
+  },
+  "gallery": {
+    "title": "फोटो गैलरी",
+    "photos": "फोटो",
+    "noAlbums": "अभी कोई एल्बम नहीं है"
+  },
+  "notices": {
+    "title": "नोटिस / समाचार",
+    "pinned": "महत्वपूर्ण",
+    "noNotices": "अभी कोई नोटिस नहीं है"
+  },
+  "donate": {
+    "title": "दान सहयोग",
+    "donateOnWebsite": "वेबसाइट पर दान करें",
+    "purposes": "दान के उद्देश्य",
+    "transparency": "पारदर्शिता",
+    "trustDetails": "ट्रस्ट विवरण",
+    "income": "आय",
+    "spend": "व्यय",
+    "note": "नोट"
+  },
+  "contact": {
+    "title": "संपर्क करें",
+    "call": "फोन करें",
+    "whatsapp": "WhatsApp करें",
+    "email": "ईमेल करें",
+    "openMap": "नक्शे पर देखें",
+    "feedback": "प्रतिक्रिया दें",
+    "feedbackPlaceholder": "आपका संदेश यहाँ लिखें...",
+    "contactOptional": "संपर्क (वैकल्पिक)",
+    "send": "भेजें",
+    "feedbackSent": "आपकी प्रतिक्रिया भेज दी गई है। धन्यवाद!",
+    "hours": "संपर्क समय"
+  },
+  "community": {
+    "title": "भक्त समुदाय",
+    "committee": "समिति सदस्य",
+    "volunteer": "स्वयंसेवक बनें",
+    "joinWhatsApp": "WhatsApp ग्रुप में जुड़ें",
+    "volunteerName": "आपका नाम",
+    "volunteerPhone": "फोन नंबर (वैकल्पिक)",
+    "volunteerInterest": "रुचि का क्षेत्र",
+    "submit": "जमा करें",
+    "submitted": "आपकी जानकारी जमा हो गई। धन्यवाद!"
+  },
+  "videos": {
+    "title": "वीडियो",
+    "categories": {
+      "aarti": "आरती",
+      "festival": "महोत्सव",
+      "katha": "कथा"
+    },
+    "watchOnYouTube": "YouTube पर देखें"
+  },
+  "templeInfo": {
+    "title": "मंदिर जानकारी",
+    "history": "इतिहास",
+    "deities": "देवी-देवता",
+    "timings": "पूजा समय",
+    "address": "पता",
+    "facilities": "सुविधाएं",
+    "howToReach": "कैसे पहुँचें",
+    "openInMaps": "नक्शे में खोलें"
+  },
+  "settings": {
+    "title": "सेटिंग्स",
+    "language": "भाषा",
+    "hindi": "हिंदी",
+    "english": "English",
+    "notifications": "सूचनाएं",
+    "noticesNotif": "नोटिस और समाचार",
+    "eventsNotif": "कार्यक्रम",
+    "aartiNotif": "आरती अनुस्मारक",
+    "about": "ऐप के बारे में",
+    "version": "संस्करण",
+    "privacyPolicy": "गोपनीयता नीति",
+    "contactDeveloper": "डेवलपर से संपर्क करें"
+  },
+  "admin": {
+    "login": "लॉगिन करें",
+    "email": "ईमेल",
+    "password": "पासवर्ड",
+    "loginError": "लॉगिन असफल। ईमेल और पासवर्ड जांचें।",
+    "logout": "लॉगआउट करें",
+    "dashboard": "डैशबोर्ड",
+    "newNotice": "नई सूचना",
+    "newEvent": "नया कार्यक्रम",
+    "uploadPhotos": "फोटो अपलोड करें",
+    "sendPushNotif": "पुश नोटिफिकेशन भेजें?",
+    "sendPushConfirm": "हाँ, भेजें",
+    "publish": "प्रकाशित करें",
+    "preview": "पूर्वावलोकन"
+  }
+}

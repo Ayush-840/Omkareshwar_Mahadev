@@ -1,0 +1,143 @@
+{
+  "tiles": {
+    "info": "Temple Info",
+    "aarti": "Aarti Darshan",
+    "events": "Events",
+    "gallery": "Photo Gallery",
+    "community": "Devotee Community",
+    "donate": "Donation Support",
+    "notices": "Notices / News",
+    "videos": "Videos",
+    "contact": "Contact Us"
+  },
+  "common": {
+    "offline": "You are offline",
+    "retry": "Try again",
+    "loading": "Loading...",
+    "noData": "No data available",
+    "error": "Something went wrong",
+    "share": "Share",
+    "close": "Close",
+    "back": "Back",
+    "save": "Save",
+    "cancel": "Cancel",
+    "settings": "Settings",
+    "lastUpdated": "Last updated",
+    "callToAction": "Learn more"
+  },
+  "home": {
+    "nextAarti": "Next aarti",
+    "in": "in",
+    "pinnedNotice": "Important Notice"
+  },
+  "aarti": {
+    "title": "Aarti Darshan",
+    "remindMe": "Remind me 10 min before",
+    "download": "Download for offline",
+    "lyrics": "Aarti Lyrics",
+    "play": "Play",
+    "pause": "Pause",
+    "nextAarti": "Next Aarti",
+    "schedule": "Aarti Schedule"
+  },
+  "events": {
+    "title": "Events",
+    "addToCalendar": "Add to calendar",
+    "remindMe": "Remind me",
+    "noEvents": "No upcoming events",
+    "listView": "List",
+    "calendarView": "Calendar"
+  },
+  "gallery": {
+    "title": "Photo Gallery",
+    "photos": "photos",
+    "noAlbums": "No albums yet"
+  },
+  "notices": {
+    "title": "Notices / News",
+    "pinned": "Pinned",
+    "noNotices": "No notices yet"
+  },
+  "donate": {
+    "title": "Donation Support",
+    "donateOnWebsite": "Donate on Website",
+    "purposes": "Donation Purposes",
+    "transparency": "Transparency",
+    "trustDetails": "Trust Details",
+    "income": "Income",
+    "spend": "Expenditure",
+    "note": "Note"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "call": "Call",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "openMap": "Open in Map",
+    "feedback": "Send Feedback",
+    "feedbackPlaceholder": "Type your message here...",
+    "contactOptional": "Contact info (optional)",
+    "send": "Send",
+    "feedbackSent": "Your feedback has been sent. Thank you!",
+    "hours": "Contact Hours"
+  },
+  "community": {
+    "title": "Devotee Community",
+    "committee": "Committee Members",
+    "volunteer": "Become a Volunteer",
+    "joinWhatsApp": "Join WhatsApp Group",
+    "volunteerName": "Your Name",
+    "volunteerPhone": "Phone Number (optional)",
+    "volunteerInterest": "Area of Interest",
+    "submit": "Submit",
+    "submitted": "Your details have been submitted. Thank you!"
+  },
+  "videos": {
+    "title": "Videos",
+    "categories": {
+      "aarti": "Aarti",
+      "festival": "Festivals",
+      "katha": "Katha"
+    },
+    "watchOnYouTube": "Watch on YouTube"
+  },
+  "templeInfo": {
+    "title": "Temple Info",
+    "history": "History",
+    "deities": "Deities",
+    "timings": "Puja Timings",
+    "address": "Address",
+    "facilities": "Facilities",
+    "howToReach": "How to Reach",
+    "openInMaps": "Open in Maps"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "hindi": "हिंदी",
+    "english": "English",
+    "notifications": "Notifications",
+    "noticesNotif": "Notices & News",
+    "eventsNotif": "Events",
+    "aartiNotif": "Aarti Reminders",
+    "about": "About App",
+    "version": "Version",
+    "privacyPolicy": "Privacy Policy",
+    "contactDeveloper": "Contact Developer"
+  },
+  "admin": {
+    "login": "Login",
+    "email": "Email",
+    "password": "Password",
+    "loginError": "Login failed. Please check your email and password.",
+    "logout": "Logout",
+    "dashboard": "Dashboard",
+    "newNotice": "New Notice",
+    "newEvent": "New Event",
+    "uploadPhotos": "Upload Photos",
+    "sendPushNotif": "Send push notification?",
+    "sendPushConfirm": "Yes, Send",
+    "publish": "Publish",
+    "preview": "Preview"
+  }
+}
